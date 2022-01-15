@@ -17,3 +17,8 @@ GIT!
 5. refresh github repo to check if it commited
 
 only will deploy the app with heroku once the app is fully finished.
+
+15/01/22
+
+- reorganised the backend structure of the program
+- included testing for the app using jest
