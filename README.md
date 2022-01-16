@@ -22,3 +22,9 @@ only will deploy the app with heroku once the app is fully finished.
 
 - reorganised the backend structure of the program
 - included testing for the app using jest
+
+For Testing
+
+- Always define separate modes for development & testing
+- Set a new mongoDB DB for testing purposes
+- Reset the test DB before every test using test_helper.js, dont forget to import into api_test!

@@ -2,18 +2,28 @@ const blogsRouter = require("express").Router();
 const { response } = require("express");
 const Blog = require("../models/blog");
 
-blogsRouter.get("/", (req, res) => {
-  Blog.find({}).then((blogs) => {
-    res.json(blogs);
-  });
+blogsRouter.get("/", async (req, res) => {
+  const blogs = await Blog.find({});
+  res.json(blogs);
 });
 
-blogsRouter.post("/", (req, res, next) => {
-  const blog = new Blog(res.body);
+blogsRouter.post("/", async (req, res, next) => {
+  const body = req.body;
 
-  blog.save().then((result) => {
-    res.status(201).json(result);
+  const blog = new Blog({
+    title: body.title,
+    author: body.author,
+    url: body.url,
+    likes: body.likes || 0,
   });
+
+  try {
+    const savedBlog = await blog.save();
+    res.status(201);
+    res.json(savedBlog);
+  } catch (exception) {
+    next(exception);
+  }
 });
 
 // it worked bitch

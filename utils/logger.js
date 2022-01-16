@@ -1,11 +1,15 @@
 // Printing normal log messages
+// Printing normal log messages
 const info = (...params) => {
-  console.log(...params);
+  if (process.env.NODE_ENV !== "test") {
+    console.log(...params);
+  }
 };
 
-// Printing error messages
 const error = (...params) => {
-  console.error(...params);
+  if (process.env.NODE_ENV !== "test") {
+    console.error(...params);
+  }
 };
 
 module.exports = {
