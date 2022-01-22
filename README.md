@@ -28,3 +28,10 @@ For Testing
 - Always define separate modes for development & testing
 - Set a new mongoDB DB for testing purposes
 - Reset the test DB before every test using test_helper.js, dont forget to import into api_test!
+
+16/01/22
+
+- Never forget to test the operations
+- Never forget to throw errors when something you feel will go wrong
+  - Helpful to use status codes
+  - Avoid using short abbreviations like res or req!

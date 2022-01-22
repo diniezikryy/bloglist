@@ -1,9 +1,9 @@
-POST http://localhost:3003/api/blogs/
+POST http://localhost:3004/api/blogs/
 Content-Type: application/json
 
 {
-    "title": "dinie pics",
-    "author": "dinie zikry",
+    "title": "dinie pics vers 1",
+    "author": "dinie zikry tudi",
     "url": "dinie.com",
     "likes": 69
 }

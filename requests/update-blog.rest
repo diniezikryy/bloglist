@@ -1,0 +1,9 @@
+PUT http://localhost:3004/api/blogs/61e259645e1a1cf8b0be63bd
+Content-Type: application/json
+
+{
+    "title": "dinie pics",
+    "author": "dinie zikry",
+    "url": "dinie.com",
+    "likes": 369
+}
