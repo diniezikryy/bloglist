@@ -35,3 +35,7 @@ For Testing
 - Never forget to throw errors when something you feel will go wrong
   - Helpful to use status codes
   - Avoid using short abbreviations like res or req!
+
+23/01/22
+
+- When implementing delete feature, try to reference the data using the id
