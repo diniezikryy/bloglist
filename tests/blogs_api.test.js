@@ -29,7 +29,7 @@ describe("when there is initially one user in db", () => {
     const usersAtStart = await helper.usersInDb();
 
     const newUser = {
-      username: "root",
+      username: "Yeet",
       name: "Matt Luukkainen",
       password: "salainen",
     };
@@ -37,7 +37,7 @@ describe("when there is initially one user in db", () => {
     await api
       .post("/api/users")
       .send(newUser)
-      .expect(200)
+      .expect(201)
       .expect("Content-Type", /application\/json/);
 
     const usersAtEnd = await helper.usersInDb();
@@ -64,7 +64,31 @@ describe("when there is initially one user in db", () => {
       .expect(400)
       .expect("Content-Type", /application\/json/);
 
+    console.log(result.body.error);
     expect(result.body.error).toContain("`username` to be unique");
+
+    const usersAtEnd = await helper.usersInDb();
+    expect(usersAtEnd).toHaveLength(usersAtStart.length);
+  });
+
+  test("creation fails with proper statuscode and message if username too short", async () => {
+    const usersAtStart = await helper.usersInDb();
+
+    const newUser = {
+      username: "ro",
+      name: "Superuser",
+      password: "salainen",
+    };
+
+    const result = await api
+      .post("/api/users")
+      .send(newUser)
+      .expect(400)
+      .expect("Content-Type", /application\/json/);
+
+    expect(result.body.error).toContain(
+      "is shorter than the minimum allowed length (3)"
+    );
 
     const usersAtEnd = await helper.usersInDb();
     expect(usersAtEnd).toHaveLength(usersAtStart.length);

@@ -2,8 +2,20 @@ POST http://localhost:3004/api/blogs/
 Content-Type: application/json
 
 {
-    "title": "dinie pics vers 1",
-    "author": "dinie zikry tudi",
+    "title": "test w/ user",
+    "author": "dinie zikry rudi",
     "url": "dinie.com",
-    "likes": 69
+    "likes": 69,
+    "userId": "61ee8e77af590b3ffc8c37ed"
+}
+###
+POST http://localhost:3004/api/blogs/
+Content-Type: application/json
+
+{
+    "title": "how to be a web dev",
+    "author": "dinie zikry rudi",
+    "url": "dinie.com",
+    "likes": 100,
+    "userId": "61ee8e77af590b3ffc8c37ed"
 }

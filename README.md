@@ -39,3 +39,12 @@ For Testing
 23/01/22
 
 - When implementing delete feature, try to reference the data using the id
+- To join queries, can implement by having it in our application code and making multiple queries taken care by mongoose
+  - By containing a reference key to the user who created the blog
+- Implementing a way to allow users to login and authenticate the users.
+- Will use JsonWebToken, Mongoose Unique Validator and BCrypt to encrypt the passwords.
+
+25/01/22
+
+- Added the user administration to app.
+- NEVER FORGET TO DO TRY CATCH OR ELSE THERE WILL ALWAYS BE ERRORS IN TEST! (JEST INFINITE LOOPS).
