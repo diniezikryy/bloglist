@@ -2,12 +2,12 @@ POST http://localhost:3004/api/users/
 Content-Type: application/json
 
 {
-    "username": "tiara",
+    "username": "beef",
     "name": "tiara",
-    "password": "tiara"
+    "password": "beef"
 }
 
-### 
+### login as tiara
 POST http://localhost:3004/api/login
 Content-Type: application/json
 
@@ -15,3 +15,14 @@ Content-Type: application/json
     "username": "tiara",
     "password": "tiara"
 }
+
+### login as beef
+POST http://localhost:3004/api/login
+Content-Type: application/json
+
+{
+    "username": "beef",
+    "password": "beef"
+}
+
+

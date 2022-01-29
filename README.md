@@ -52,7 +52,9 @@ For Testing
 29/01/22
 
 - Time to tag the user information to the blog post
+- Used express async errors pkg to catch errors instead of try-catch
 - Use populate to link two different document models across API
 - Implementing token auth to the bloglist
 - Only when the username and the password is correct, the server generates a token and return it as a response
-- Order of the middleware must be correct! In this case, since the middleware involved is meant to get the token from the request, it should come before the loginRouter controller
+- Order of the middleware must be correct! In this case, since the middleware involved is meant to get the token from the request, it should come before the loginRouter/blogRouter controller
+- Addding the functionality of only user with valid token to be able to delete his/her blog post.
