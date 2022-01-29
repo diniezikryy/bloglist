@@ -2,8 +2,8 @@ POST http://localhost:3004/api/users/
 Content-Type: application/json
 
 {
-    "username": "diniez",
-    "name": "Superuser",
+    "username": "tiara",
+    "name": "tiara",
     "password": "tiara"
 }
 
@@ -12,6 +12,6 @@ POST http://localhost:3004/api/login
 Content-Type: application/json
 
 {
-    "username": "diniez",
+    "username": "tiara",
     "password": "tiara"
 }

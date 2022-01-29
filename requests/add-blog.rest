@@ -23,12 +23,12 @@ Content-Type: application/json
 ### Add blog w/ token auth
 POST http://localhost:3004/api/blogs/
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpbmlleiIsImlkIjoiNjFmNTI3NzVhZjU5Mjk1YThjYjI1ZTJmIiwiaWF0IjoxNjQzNDU2ODM2fQ.GVNX6jMN8E9_PM8iSvifVFs_GS2Ni_2CjAvcU8Nzfxc
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRpYXJhIiwiaWQiOiI2MWY1MzBiMGNhMzRiNmM1MjRmNDA1MTkiLCJpYXQiOjE2NDM0NTg3MzksImV4cCI6MTY0MzQ2MjMzOX0.WUl9H7e_e2DnbzGCDhv_-wExyBemMEzG1l9Z-Cxc5Jk
 
 {
-    "title": "how to be a backend dev",
-    "author": "dinie zikry rudi",
-    "url": "dinie.com",
+    "title": "how to be a tiara dev",
+    "author": "tiara tania",
+    "url": "tiara.com",
     "likes": 100
 }
 
