@@ -48,3 +48,9 @@ For Testing
 
 - Added the user administration to app.
 - NEVER FORGET TO DO TRY CATCH OR ELSE THERE WILL ALWAYS BE ERRORS IN TEST! (JEST INFINITE LOOPS).
+
+29/01/22
+
+- Time to tag the user information to the blog post
+- Use populate to link two different document models across API
+- Implementing token auth to the bloglist
