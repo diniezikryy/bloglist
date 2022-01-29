@@ -58,3 +58,5 @@ For Testing
 - Only when the username and the password is correct, the server generates a token and return it as a response
 - Order of the middleware must be correct! In this case, since the middleware involved is meant to get the token from the request, it should come before the loginRouter/blogRouter controller
 - Addding the functionality of only user with valid token to be able to delete his/her blog post.
+- Need to practice on using Jest to test api w/ token auth
+  - Refer to this for the used fix https://github.com/visionmedia/supertest/issues/398

@@ -18,21 +18,6 @@ const tokenExtractor = (request, response, next) => {
   next();
 };
 
-const tokenValidator = (request, response, next) => {
-  const token = request.token;
-
-  if (!token) {
-    return response.status(401).json({ error: "token missing" });
-  }
-
-  const decodedToken = jwt.verify(token, process.env.SECRET);
-  if (!decodedToken.id) {
-    return response.status(401).json({ error: "invalid token" });
-  }
-
-  next();
-};
-
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: "unknown endpoint" });
 };
@@ -63,5 +48,4 @@ module.exports = {
   unknownEndpoint,
   errorHandler,
   tokenExtractor,
-  tokenValidator,
 };
