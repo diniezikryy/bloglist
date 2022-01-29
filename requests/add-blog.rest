@@ -19,3 +19,27 @@ Content-Type: application/json
     "likes": 100,
     "userId": "61ee8e77af590b3ffc8c37ed"
 }
+
+### Add blog w/ token auth
+POST http://localhost:3004/api/blogs/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpbmlleiIsImlkIjoiNjFmNTI3NzVhZjU5Mjk1YThjYjI1ZTJmIiwiaWF0IjoxNjQzNDU2ODM2fQ.GVNX6jMN8E9_PM8iSvifVFs_GS2Ni_2CjAvcU8Nzfxc
+
+{
+    "title": "how to be a backend dev",
+    "author": "dinie zikry rudi",
+    "url": "dinie.com",
+    "likes": 100
+}
+
+### Add blog w/ wrong token auth
+POST http://localhost:3004/api/blogs/
+Content-Type: application/json
+Authorization: bearer GciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpbmlleiIsImlkIjoiNjFmNTI3NzVhZjU5Mjk1YThjYjI1ZTJmIiwiaWF0IjoxNjQzNDU2ODM2fQ.GVNX6jMN8E9_PM8iSvifVFs_GS2Ni_2CjAvcU8Nzfxc
+
+{
+    "title": "how to be a backend dev",
+    "author": "dinie zikry rudi",
+    "url": "dinie.com",
+    "likes": 100
+}
