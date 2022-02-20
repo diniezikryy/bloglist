@@ -7,6 +7,21 @@
 
 Live Preview: https://bloglist-dzr.herokuapp.com/
 
+## Technologies used
+- MongoDB Atlas
+- React
+- ExpressJS
+- Axios
+- JsonWebToken
+- Jest
+
+## The Process
+- Firstly, wrote the code for the backend using ExpressJS and Axios. Then linked the MongoDB database to the backend
+- Secondly, Tested the backend with Jest to see if the backend was working as intended
+- Thirdly, wrote the frontend code and tested the frontend with Jest as well
+
+### Webapp was made using a local mongoDB database first, then hooked the webapp up with mongoDB atlas cloud database
+
 # Notes
 
 github repo is in diniezikryy under blog-list.
@@ -14,8 +29,6 @@ github repo is in diniezikryy under blog-list.
 local mongoDB database used to develop the application. Once it is in finished state, will shift to MongoDB Atlas cloud database.
 
 LOCAL DB! -> mongodb://localhost/bloglist
-
-cloudDB ->
 
 - DB is bloglist, collection is blogs
 
