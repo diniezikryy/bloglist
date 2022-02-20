@@ -1,3 +1,12 @@
+# Bloglist App
+
+## Objectives
+1. Allow users to add their favourite blogs on the webapp.
+2. Only allow logged-in users to add a blog to the webapp.
+3. Only allow the user who added the blog be able to delete the blog off the webapp.
+
+Live Preview: https://bloglist-dzr.herokuapp.com/
+
 github repo is in diniezikryy under blog-list.
 
 local mongoDB database used to develop the application. Once it is in finished state, will shift to MongoDB Atlas cloud database.
