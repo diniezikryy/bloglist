@@ -1,8 +1,7 @@
 ### Delete blog w/ correct user
-DELETE http://localhost:3004/api/blogs/61f5377c78959715992c71aa
+DELETE http://localhost:3004/api/blogs/61f55dcab50e0458ad78740e
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRpYXJhIiwiaWQiOiI2MWY1MzBiMGNhMzRiNmM1MjRmNDA1MTkiLCJpYXQiOjE2NDM0NjEwMjEsImV4cCI6MTY0MzQ2NDYyMX0.GHMWSCs1us8wJFW1tszvyHfrMsaI3thIuUvbfqoPIsE
-
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRpYXJhIiwiaWQiOiI2MWY1MzBiMGNhMzRiNmM1MjRmNDA1MTkiLCJpYXQiOjE2NDM0NzAyNTIsImV4cCI6MTY0MzQ3Mzg1Mn0.nxzBMCVdotcaBEu78EXN6eZ-8Zzf2GCOiTOqluokZsk
 ### Delete blog w/ wrong user
 DELETE http://localhost:3004/api/blogs/61f53c4cedba9b95ab1706a4
 Content-Type: application/json

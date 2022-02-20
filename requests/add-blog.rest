@@ -23,10 +23,10 @@ Content-Type: application/json
 ### Add blog w/ token auth
 POST http://localhost:3004/api/blogs/
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRpYXJhIiwiaWQiOiI2MWY1MzBiMGNhMzRiNmM1MjRmNDA1MTkiLCJpYXQiOjE2NDM0NTg3MzksImV4cCI6MTY0MzQ2MjMzOX0.WUl9H7e_e2DnbzGCDhv_-wExyBemMEzG1l9Z-Cxc5Jk
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRpYXJhIiwiaWQiOiI2MWY1MzBiMGNhMzRiNmM1MjRmNDA1MTkiLCJpYXQiOjE2NDM0NzAyNTIsImV4cCI6MTY0MzQ3Mzg1Mn0.nxzBMCVdotcaBEu78EXN6eZ-8Zzf2GCOiTOqluokZsk
 
 {
-    "title": "blog post to be deleted",
+    "title": "blog post to delete",
     "author": "tiara tania",
     "url": "tiara.com",
     "likes": 100

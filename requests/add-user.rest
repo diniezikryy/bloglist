@@ -1,10 +1,10 @@
-POST http://localhost:3004/api/users/
+POST http://localhost:3000/api/users/
 Content-Type: application/json
 
 {
-    "username": "beef",
-    "name": "tiara",
-    "password": "beef"
+    "username": "superuser",
+    "name": "superuser",
+    "password": "password"
 }
 
 ### login as tiara
@@ -12,8 +12,8 @@ POST http://localhost:3004/api/login
 Content-Type: application/json
 
 {
-    "username": "tiara",
-    "password": "tiara"
+    "username": "viswa",
+    "password": "viswa"
 }
 
 ### login as beef

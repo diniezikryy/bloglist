@@ -60,3 +60,4 @@ For Testing
 - Addding the functionality of only user with valid token to be able to delete his/her blog post.
 - Need to practice on using Jest to test api w/ token auth
   - Refer to this for the used fix https://github.com/visionmedia/supertest/issues/398
+- Need to figure out how to extract the user from the token

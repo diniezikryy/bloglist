@@ -7,7 +7,7 @@ usersRouter.post("/", async (request, response, next) => {
 
   if (body.password.length < 3) {
     return response.status(400).json({
-      error: `User validation failed: username: Path password is shorter than the minimum allowed length (3)`,
+      error: `User validation failed: username: Password is shorter than the minimum allowed length (3)`,
     });
   }
 
