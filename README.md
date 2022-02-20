@@ -7,6 +7,8 @@
 
 Live Preview: https://bloglist-dzr.herokuapp.com/
 
+# Notes
+
 github repo is in diniezikryy under blog-list.
 
 local mongoDB database used to develop the application. Once it is in finished state, will shift to MongoDB Atlas cloud database.
